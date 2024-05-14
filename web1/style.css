@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    background-image: url("/images/back.jpeg");
+    width: 100vw;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 25px;
+    font-weight: 500;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+   
+}
+.bird{
+    width: 130px;
+    margin-top: -15px;
+    }
+.logo{
+    display:inline-flex;
+    align-items: center;
+}
+h2{
+    margin-left: -25px;
+    background-image: linear-gradient(70deg, #18b42d, #0000ff, rgb(197, 36, 197)); 
+    /* Define the gradient */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* For non-webkit browsers */
+    color: transparent;/* Make the original text color transparent */
+ }
+ .login-btn{
+    text-decoration:none;
+    color:black;
+    margin-right: 16px;
+   
+
+ }
+ .btn{
+    text-decoration: none;
+    color:black;
+    padding: 14px 40px;
+    background-image:linear-gradient(70deg,#18b42dee, #1d63faac, rgb(214, 34, 245));
+    font-size: 18px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+ }
+h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+  
+}
+.content{
+    margin-top: 10px;
+    margin-left: 35px;
+    max-width: 50vw;
+}
+.content p{
+margin: 10px 0 50px;
+animation-delay: 0.5s;
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 20px;
+    animation-delay: 1s;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.girl-img{
+    height: 660px;
+    position: absolute;
+    bottom: 0;
+    right:30px;
+}
+.girl-img.anime{
+animation-delay: 1.5s;
+}
+.anime{
+    opacity: 0;
+   transform: translateY(30px);
+    animation: move 0.5s linear forwards ;
+}
+
+@keyframes move {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
